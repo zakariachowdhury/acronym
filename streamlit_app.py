@@ -12,6 +12,7 @@ def main():
     with st.expander('Info', False):
         st.write('A python-based tool for creating English-ish Acronyms from your fancy project.')
         st.write('ACRONYM is described in this paper released on the arXiv: https://arxiv.org/abs/1903.12180')
+        st.markdown('<iframe src="https://ghbtns.com/github-btn.html?user=zakariachowdhury&repo=acronym&type=star&count=true" frameborder="0" scrolling="0" width="150" height="20" title="GitHub"></iframe>', unsafe_allow_html=True)
 
         st.subheader('Scoring System')
         st.markdown('* 10 points if first letter in a word (with exception of first letter)')
@@ -38,7 +39,7 @@ def main():
             else:
                 corpus = nltk.corpus.gutenberg
 
-            with st.spinner('Generating acronyms...'):
+            with st.spinner('Generating acronyms, please wait...'):
                 results = acronym.find_acronyms(name, corpus, min_length, max_length)
                 st.subheader('Results')
                 st.write(results)
