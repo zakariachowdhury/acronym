@@ -1,10 +1,17 @@
 # ACRONYM (Acronym CReatiON for You and Me)
 =====
 
-A python-based tool for creating English-ish Acronyms from your fancy project
+A streamlit app which is a python-based tool for creating English-ish Acronyms from your fancy project.
 
 `ACRONYM` is described in this paper released on the arXiv: https://arxiv.org/abs/1903.12180
 
+## How to run this app
+```
+pip install -r ./requirements.txt
+streamlit run ./streamlit_app.py
+```
+
+## How to install as a command-line tool
 `ACRONYM` can be installed using pip:
 
 ```
